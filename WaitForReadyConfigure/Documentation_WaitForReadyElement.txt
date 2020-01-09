@@ -1,0 +1,11 @@
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*---
+WaitForReadyElement activity documentation.
+	Description:
+		This module provides maximum configuration while waiting for item availability.
+	Input arguments:
+		MaxRetryNumberToFindElement(Int32) - this is the number of tries that robot must use to find an element.(Default: 5)
+		SelectorToWait(String) - the given argument accepts the selector which robot will try to search for the given activity.
+		TimeToSearchElement(Int32) - this argument accepts integer in MS. This is the time that the robot will wait for the appearance of the element during the transaction.
+	Output arguments:
+		IsElementFound(Boolean) - this outgoing argument is false, when selector was not found using the amount of transactions, that was passed into input argument. The argument is true, when selector was found and it's ready to work with.
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--
