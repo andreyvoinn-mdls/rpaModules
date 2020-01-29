@@ -4,6 +4,7 @@ WaitForReadyElement activity documentation.
 		This module provides maximum configuration while waiting for item availability.
 	Input arguments:
 		MaxRetryNumberToFindElement(Int32) - this is the number of tries that robot must use to find an element.(Default: 5)
+		NeedsToBeLogged(Boolean) - this condition determines whether detailed actions of the robot will be logged when performing this activity
 		SelectorToWait(String) - the given argument accepts the selector which robot will try to search for the given activity.
 		TimeToSearchElement(Int32) - this argument accepts integer in MS. This is the time that the robot will wait for the appearance of the element during the transaction.
 	Output arguments:
