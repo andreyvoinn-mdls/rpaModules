@@ -1,0 +1,10 @@
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--
+EnviromentRPASetUp activity documentation.
+Description:
+        This module provides flexible google chrome browser setup for RPA for individual accounts as well as for all users(Default)
+    Input arguments:
+        CustomAccountNamesArray(String[])*|OPTIONAL|* - An optional parameter that defines the accounts for which you need to configure for the needs of the RPA. If left blank, the configuration will be performed for the entire browser system, along the DEFAULT path.
+        CustomChromeFolderPath(String)*|OPTIONAL|* - This optional argument takes the FULL path to the Google Chrome custom location. If left blank, the process will look for the Google Chrome folder in the default location during installation. The user path to the program data should point to the folder on this path "... \ Google \ Chrome"
+        IsChromeMustBeKilledFirst(Boolean) - This argument, upon receipt of a positive option, passes through the system processes before performing the configuration and stops all processes associated with Google Chrome, which may interfere with the Preferences setting.
+        IsResultsMustBeLogged(Int32) - This condition determines whether detailed actions of the robot will be logged when performing this activity. It also provides information on which accounts were configured and the status of making the appropriate settings
+-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*---*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-
